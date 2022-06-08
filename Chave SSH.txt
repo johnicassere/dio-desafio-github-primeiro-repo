@@ -1,0 +1,12 @@
+Comandos para gerar chave SSH
+
+ssh-keygen -t ed25519 -C johnicassere@hotmail.com
+
+cat id_ed25519.pub  (Pegar chave gerada e colar no github SSH)
+
+
+eval $(ssh-agent -s)
+
+
+ssh-add id_ed25519
+
